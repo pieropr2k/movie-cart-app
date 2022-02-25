@@ -240,7 +240,7 @@ body{
     cursor: pointer;
 }
 
-@media (min-width: 395px) and (max-width: 530px) {
+@media (max-width: 530px) {
 	#movies-list{
         grid-template-columns: repeat(1, 1fr);
     }

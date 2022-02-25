@@ -45,7 +45,7 @@ import { UsableClass } from "./usableFunctions/usableClass.js";
 	// OMDB functions are to use the OMDB API in this app
 	// We fetch only one movie or serie
 	const omdbID = async (id) => {
-		let url = 'http://www.omdbapi.com/?apikey=c5f89a89&i=' + id;
+		let url = 'https://www.omdbapi.com/?apikey=c5f89a89&i=' + id;
 		const res = await fetch(url);
 		const el = await res.json();
 		console.log(el.Type);
@@ -77,7 +77,7 @@ import { UsableClass } from "./usableFunctions/usableClass.js";
 
 	// We fetch all the data in the app 
 	const omdb = async (movie) => {
-		let url = 'http://www.omdbapi.com/?apikey=c5f89a89&s='+movie;
+		let url = 'https://www.omdbapi.com/?apikey=c5f89a89&s='+movie;
 		const res = await fetch(url);
 		const json = await res.json();
 		const results = await json.Search;

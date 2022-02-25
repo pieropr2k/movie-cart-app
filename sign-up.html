@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Create Account</title>
+	<link rel="stylesheet" type="text/css" href="practice2-login.css">
+</head>
+<body>
+	<div id="container">
+		<div id="wallpaper">
+			<div id="movie-logo">
+				<h2>Movie App</h2>
+			</div>
+		</div>
+		<div id="right">
+			<div id="form">
+				<h3 id="title-form" class="title-sign-in">CREAR CUENTA</h3>
+				<p class="form-rules">Cree su nombre de usuario e introduzca su contraseña. Nuestro equipo guardara sus datos y seremos muy privados</p>
+				<form id="imputs" name="imputs">
+					<div class="user-dates">
+						<label for="name" class="company-name">Usuario: </label>
+						<input type="text" name="name" class="user clear" placeholder="Usuario">
+					</div>
+					<div class="password-dates">
+						<label for="password" class="company-password">Contraseña: </label>
+						<input type="password" name="password" class="password clear" placeholder="Contraseña">
+					</div>
+					<div class="create-account">
+						<p>Si quiere entrar a una cuenta existente puede entrar <a href="index.html">aquí</a> de nuevo</p>
+					</div>
+				</form>
+				<input type="submit" value="Registrarte" form="imputs" id="add-account" class="clear">
+				<div id="alert">
+					<!--<p id="complete">Listo, su cuenta esta creada</p>-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="sign-up.js"></script>
+</body>
+</html>

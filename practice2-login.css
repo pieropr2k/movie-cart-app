@@ -1,170 +1,205 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-body{
+
+body {
 	/*background-color: #13ADCA;*/
 	background-color: #305886;
 	background-color: #fff;
 	color: #fff;
 	color: #3A5950;
 }
-*{
+
+* {
 	/*font-family: Arial Narrow, Ginebra;*/
 	font-family: 'Poppins', sans-serif;
 	padding: 0px;
 	margin: 0px;
 }
+
 :root {
-    --pink: #f212c3; 
+	--pink: #f212c3;
 	--pink: #FF0070;
-    --blue: #305886;
-    --white: #fff;
-    --header: #081f24;
+	--blue: #305886;
+	--white: #fff;
+	--header: #081f24;
 }
-#container{
+
+#container {
 	display: flex;
 	height: 100vh;
 }
-#wallpaper{
+
+#wallpaper {
 	background-color: var(--pink);
 	width: 50%;
 	height: 100%;
 	display: flex;
-  	align-items: center;
-  	justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
-#movie-logo{
+
+#movie-logo {
 	background-image: url('https://www.eleconomista.com.mx/__export/1616610925302/sites/eleconomista/img/2021/03/03/cine_reapertura.jpg_1093282975.jpg');
 	width: 100%;
 	height: 50%;
 	background-size: cover;
 	background-position: bottom right;
-    overflow: hidden;
+	overflow: hidden;
 	color: var(--pink);
 }
-#movie-logo h2{
+
+#movie-logo h2 {
 	margin-top: 30px;
-    margin-left: 30px;
+	margin-left: 30px;
 }
+
 /*#container{
 	width: 90%;
 	margin: 20px auto;
 }*/
-#right{
+#right {
 	width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-#title-form{
+
+#title-form {
 	border-bottom: 4px solid var(--pink);
-    /*width: 15.5%;*/
-    font-weight: 500;
+	/*width: 15.5%;*/
+	font-weight: 500;
 }
-.title-login{
+
+.title-login {
 	width: 60px;
 }
-.title-sign-in{
+
+.title-sign-in {
 	width: 147px;
 }
-#form{
+
+#form {
 	/*margin: auto;*/
 	width: 55%;
 	min-width: 380px;
 }
-.form-rules{
+
+.form-rules {
 	margin-top: 15px;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
-#imputs{
+
+#imputs {
 	margin-top: 14px;
 }
-.user-dates, .password-dates{
+
+.user-dates,
+.password-dates {
 	/*display: block;*/
 	display: grid;
-    grid-template-columns: 29.5% 1fr;
-    margin-bottom: 15px;
+	grid-template-columns: 29.5% 1fr;
+	margin-bottom: 15px;
 }
-.create-account{
+
+.create-account {
 	margin-bottom: 12px;
 	margin-top: 20px;
 	text-align: center;
 }
-.company-name, .company-password{
+
+.company-name,
+.company-password {
 	/*font-size: 1.1em;*/
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
-.clear{
+
+.clear {
 	border: none;
 	outline: none;
 }
-.user, .password{
-    height: 38px;
-    font-size: 15px;
-    border-radius: 30px;
-    border: 1px solid var(--header);
-    padding-left: 12px;
+
+.user,
+.password {
+	height: 38px;
+	font-size: 15px;
+	border-radius: 30px;
+	border: 1px solid var(--header);
+	padding-left: 12px;
 }
+
 /*.user{
 	text-transform: capitalize;
 }*/
-#add-account, #login-button{
+#add-account,
+#login-button {
 	/*background: #FF0070;*/
 	background-color: var(--pink);
 	color: var(--white);
 	letter-spacing: 1px;
 	font-size: 20px;
 	font-size: 15px;
-    font-weight: bold;
-    width: 100%;
-    /*width: 90%;
+	font-weight: bold;
+	width: 100%;
+	/*width: 90%;
      margin-left: auto; */
-    /* margin-right: auto; */
-    margin-top: 10px;
-    height: 35px;
-    border-radius: 30px;
+	/* margin-right: auto; */
+	margin-top: 10px;
+	height: 35px;
+	border-radius: 30px;
 	cursor: pointer;
-    /* margin: 20px auto; */
+	/* margin: 20px auto; */
 }
-#alert{
+
+#alert {
 	margin-top: 20px;
 	text-align: center;
 	color: #fff;
 }
-.checked{
+
+.checked {
 	background: green;
 	padding: 5px;
 }
-.complete{
+
+.complete {
 	background: red;
 	padding: 5px;
 }
+
 @media (max-width: 820px) {
 	#container {
 		flex-direction: column;
 		height: 100%;
 	}
+
 	#right {
 		padding: 20px 0px;
 		width: 100%
 	}
+
 	#wallpaper {
 		width: 100%;
 		height: 325px;
 	}
-	#movie-logo{
+
+	#movie-logo {
 		width: 100%;
 		height: 100%;
 	}
 }
+
 @media (max-width: 400px) {
 	#wallpaper {
 		height: 300px;
 	}
+
 	#form {
 		min-width: 85%;
-	}	
-	.user-dates, .password-dates {
+	}
+
+	.user-dates,
+	.password-dates {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(2, 1fr);
 	}

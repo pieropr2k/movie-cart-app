@@ -24,7 +24,7 @@ import { UsableClass } from "./usableFunctions/usableClass.js";
 			//createCard('practice-users', newUser);
 			const usersArray = JSON.parse(localStorage.getItem('practice-users'));
 			//if(noRepeat('practice-users', newUser, ['name', 'password'])){
-			if(DBManager.noRepeat(usersArray, newUser, ['name', 'password'])){
+			if(DBManager.noRepeat(usersArray, newUser, ['name', 'password'], false)){
 				DBManager.createCard('practice-users', newUser);
 				UsableClass.showMessage("Listo, su cuenta esta creada", 'checked');
 			} else {

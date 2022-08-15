@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-body{
+
+body {
     margin: 0px;
-	/*height: 100vh;*/
+    /*height: 100vh;*/
 }
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
 :root {
-    --pink: #f212c3; 
+    --pink: #f212c3;
     --blue: #305886;
     --white: #fff;
     --header: #081f24;
 }
+
 /**#header{
     padding: 0px;
     margin: 0px;
@@ -29,39 +31,48 @@ body{
     display: grid;
     grid-template-columns: 1fr 40%;
 }
-#user-name{
+
+#user-name {
     margin-left: 36px;
 }
-#nav{
+
+#nav {
     display: flex;
     justify-content: flex-end;
 }
-#header-opc{
+
+#header-opc {
     margin: 0px;
     padding-left: 0px;
 }
-.align{
+
+.align {
     display: flex;
     align-items: center;
 }
-.menu-btn{
+
+.menu-btn {
     padding: 25px;
     display: none;
 }
-#header .menu-btn i{
+
+#header .menu-btn i {
     color: #fff;
     font-size: 22px;
     cursor: pointer;
 }
-  input[type="checkbox"]{
+
+input[type="checkbox"] {
     display: none;
-  }
-.option-text{
+}
+
+.option-text {
     display: block;
     color: white;
     text-decoration: none;
 }
-.option{
+
+.option {
     box-sizing: border-box;
     list-style: none;
     /*padding: 0px 12px;
@@ -71,14 +82,17 @@ body{
     list-style: none;
     border-bottom: 5px solid var(--pink);
 }
-.option:hover{
+
+.option:hover {
     background: gray;
 }
-.option a{
+
+.option a {
     display: block;
     padding: 0px 12px;
 }
-#log-out{
+
+#log-out {
     padding: 0px 12px;
     margin: 0px 6%;
     border: none;
@@ -89,23 +103,26 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+
 /*Buscador de contenido*/
-#search{
-	position: relative;
+#search {
+    position: relative;
     width: 95%;
     margin: auto;
     /*background: #fff;*/
     padding: 20px 0px;
     z-index: 9;
 }
-#searcher{
-	position: relative;
+
+#searcher {
+    position: relative;
     /*width: 1200px;
     width: 95%;
     margin: auto;*/
     outline: 0;
 }
-#searcher input{
+
+#searcher input {
     display: block;
     /*width: 1200px;
     width: 98%;*/
@@ -115,9 +132,10 @@ body{
     font-size: 18px;
     outline: 0;
 }
-.buttonSearch{
-	position: absolute;
-	right: 0px;
+
+.buttonSearch {
+    position: absolute;
+    right: 0px;
     top: 0px;
     /* height: 60px; */
     padding: 8.5px;
@@ -131,7 +149,8 @@ body{
     border: 3px solid #fff;
     border-radius: 5px;*/
 }
-#result{
+
+#result {
     /*padding: 0px 12px;
     margin: 0px 5%;*/
     padding: 5px 10px;
@@ -142,7 +161,8 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
-#movies-list{
+
+#movies-list {
     width: 95%;
     margin: auto;
     display: grid;
@@ -154,55 +174,57 @@ body{
 /*online*/
 
 .container {
-  width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .box {
-  position: relative;
-  /*width: 300px;*/
-  height: 550px;
-  background: var(--header);
-  box-shadow: 0 30px 30px var(--header);
+    position: relative;
+    /*width: 300px;*/
+    height: 550px;
+    background: var(--header);
+    box-shadow: 0 30px 30px var(--header);
 }
 
 .box .imgBx {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .box .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
 }
 
 .box:hover .imgBx img {
-  opacity: 0;
+    opacity: 0;
 }
 
 .box .content {
-  position: absolute;
-  bottom: 20px;
-  left: 10%;
-  width: 80%;
-  height: 60px;
-  background: var(--white);
-  transition: 0.5s;
-  overflow: hidden;
-  padding: 0px 25px;
-  box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: var(--white);
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 0px 25px;
+    box-sizing: border-box;
 }
 
 .box:hover .content {
+    overflow-y: scroll;
     padding: 15px;
     width: 100%;
     height: 100%;
@@ -211,25 +233,27 @@ body{
 }
 
 .box .content h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
 
-.box .content p{
-  margin: 10px 0 0;
-  padding: 0;
-  opacity: 0;
-  line-height: 1.2em;
-  transition: 0.5s;
-  text-align: justify;
+.box .content p {
+    margin: 10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
 }
 
-.box:hover .content p{
-  opacity: 1;
-  transition-delay: 0.5s;
+.box:hover .content p {
+    opacity: 1;
+    transition-delay: 0.5s;
 }
-.add-favorites, .remove-movie{
+
+.add-favorites,
+.remove-movie {
     margin-top: 15px;
     padding: 5px 10px;
     border: none;
@@ -241,26 +265,30 @@ body{
 }
 
 @media (max-width: 530px) {
-	#movies-list{
+    #movies-list {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 @media (min-width: 530px) and (max-width: 1000px) {
-	#movies-list{
+    #movies-list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 395px) {
-    #header { 
+    #header {
         position: fixed;
         z-index: 10;
         grid-template-columns: 1fr 70px;
         top: 0px;
     }
-    .menu-btn{
+
+    .menu-btn {
         display: block;
     }
-    #nav{
+
+    #nav {
         position: fixed;
         top: 70px;
         /*left: 0;*/
@@ -273,34 +301,42 @@ body{
         display: block;
         transition: left 0.3s ease;
     }
-    #header .menu-btn i{
+
+    #header .menu-btn i {
         color: var(--white);
         font-size: 22px;
         cursor: pointer;
         display: block;
     }
-    #click:checked ~ .menu-btn i:before{
+
+    #click:checked~.menu-btn i:before {
         content: "\f00d";
     }
-    #click:checked ~ #nav{
+
+    #click:checked~#nav {
         left: 0;
     }
-    #search{
+
+    #search {
         margin-top: 70px;
         padding: 20px 15px;
     }
-    #searcher{
+
+    #searcher {
         margin-right: 15px;
     }
-    .option{
+
+    .option {
         border-bottom: 1px solid var(--header);
         border-top: 1px solid var(--header);
     }
+
     .option a {
         /* display: block; */
         padding: 0px 12px;
         width: 100%;
     }
+
     #log-out {
         margin-top: 25px;
     }
